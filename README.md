@@ -892,34 +892,52 @@ The phone camera detects human presence using Python, and the result is sent to 
 For Hardware:
 
 # Schematic & Circuit
-![Circuit]
+![Circuit]<img width="768" height="1024" alt="WhatsApp Image 2026-09-04 at 10 48 33 AM" src="https://github.com/user-attachments/assets/9e7f8bd1-b261-42a6-9e20-8b7fc6468d01" />
 
 
+![Schematic]
+<img width="1536" height="1024" alt="WhatsApp Image 2026-09-04 at 11 16 54 AM" src="https://github.com/user-attachments/assets/c4c6138a-1722-4f87-b6c2-f476af0fd5b5" />
+The phone camera detects human presence using Python/OpenCV, while the ESP32 receives the result and sensor inputs to control the connected devices automatically.
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
 
 # Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
+![Components]
 
-![Build](Add photos of build process here)
-*Explain the build steps*
 
-![Final](Add photo of final product here)
-*Explain the final build*
+![Build]
+<img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/ea1531db-7d2c-4952-a0b6-77b86338d259" />
+<img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/617fcc79-c0be-4180-a9ca-8daf7b84a8bc" />
+<img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/01041ad1-367f-40d2-810a-780441fdf20e" />
+<img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/9db76325-e23c-4fb1-81bc-a7ff10e9fdb6" />
+<img width="1080" height="1440" alt="image" src="https://github.com/user-attachments/assets/fc87a7ef-8a7f-4584-9e57-f8da85db72be" />
+Step-by-Step Build
+
+1. Connect the sensors and RGB LED to the ESP32-WROOM.
+2. Program the ESP32 using Arduino IDE to read the sensor inputs.
+3. Set up the phone camera with Python and OpenCV.
+4. Use Python to detect whether a human is present.
+5. Send the detection result from Python to the ESP32.
+6. The ESP32 processes the result and controls the connected devices automatically.
+7. Test all components together and run the system continuously.
+
+
+![Final]
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/8f48d561-0939-4757-a9ca-e4bc412ac411" />
+<img width="899" height="987" alt="image" src="https://github.com/user-attachments/assets/9b61ac3e-cf4d-44b1-91d6-86143a36c7aa" />
+
+
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+https://drive.google.com/drive/folders/1TKBacUugVNqEFkTk8R9H-I7IMc4b260b
+Our project is a smart home automation system using ESP32 and Python. A phone camera captures live video. Python and OpenCV detect whether a human is present. The detection result is sent to the ESP32. The ESP32 also receives data from different sensors. It processes all the inputs together. Based on the conditions, it controls the connected devices. The system can monitor light, motion, door status, temperature, and humidity. This reduces unnecessary manual control. Overall, the project combines computer vision and embedded automation in one simple system.
 
 # Additional Demos
-[Add any extra demo materials/links]
+https://drive.google.com/drive/folders/1oICfdNwpuUVN8U2ifv4jcr7-Zq_J_9uF
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
+- [Aldrin Joseph]: [python code,phone camera and motion sensors]
+- [Sain P Savin]: [arduino code,LR , PIR sensors]
 - [Name 3]: [Specific contributions]
 
 ---
