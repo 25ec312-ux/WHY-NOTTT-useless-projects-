@@ -1,98 +1,123 @@
 # 🏠 The House Has a Group Chat
 
-### Useful Technology. Useless Purpose.
+## Useful Technology. Useless Purpose.
 
-What if your house could talk about you behind your back?
+> What if your house could talk about you behind your back?
 
-**The House Has a Group Chat** is an IoT-based smart-home system where everyday objects such as the light, door, fan and chair monitor human activity and communicate with each other.
+**The House Has a Group Chat** is an IoT-based smart-home project where everyday household objects observe human activity and communicate with each other.
 
-Instead of helping the user, the objects observe, gossip and judge the user's behaviour. 😂
-
-## 💡 Concept
-
-We took useful technology and used it to accomplish something completely unnecessary.
-
-The system allows household objects to monitor human activity and communicate with each other.
-
-Example:
-
-> 💡 Light: "It's noon. Why am I ON?"
-
-> 🚪 Door: "He has opened me 14 times."
-
-> 🪑 Chair: "He's been sitting for 3 hours."
-
-> 🌀 Fan: "Apparently 18°C wasn't cold enough."
-
-## 🎯 Objective
-
-To create a technically serious IoT project that is intentionally useless, entertaining and interactive.
-
-The project demonstrates:
-
-- IoT
-- ESP32 programming
-- Sensor interfacing
-- Wi-Fi communication
-- Data processing
-- Computer vision
-- Human-computer interaction
-- Embedded systems
-
-## 🤡 Why Is It Useless?
-
-The system doesn't:
-
-- Save energy
-- Improve security
-- Automate useful tasks
-- Make decisions for the user
-
-It simply observes, communicates and judges.
+Instead of performing useful automation, the system watches the human, detects what is happening, and allows the objects to **gossip, comment and judge the user's behaviour.**
 
 ### We didn't build a smart home.
 
 ### We built a home that thinks you're stupid. 😂
 
-## 🔧 Hardware
+---
 
-| Component | Purpose |
-|---|---|
-| ESP32 | Main controller |
-| LDR | Light detection |
-| RGB LED | Light representation |
-| IR Sensor | Door/activity detection |
-| DHT22 | Temperature and humidity |
-| DC Fan | Fan representation |
-| Motor Driver | Fan control |
-| Webcam | Human detection |
+# 💡 Concept
 
-## 🚧 Development Progress
+The project combines physical sensors, an ESP32 and Python-based computer vision to create a fictional communication system between household objects.
 
-- [x] ESP32 setup
-- [x] RGB light
-- [x] LDR sensor
-- [x] IR sensor
-- [x] DHT22
-- [x] Fan control
-- [ ] Wi-Fi communication
-- [ ] House Group Chat
-- [ ] Human Behaviour Report
-- [ ] Computer Vision
-- [ ] Final integration
+The system currently includes:
 
-## 🎥 Project Demo
+- 💡 Smart Light
+- 🚪 Smart Door
+- 📷 Human Detection Camera
+- 🧠 ESP32 Controller
+- 💻 Python Computer Vision
 
-Coming soon.
+The objects don't actually solve a real-world problem.
 
-## 📸 Project Gallery
+They simply observe what the human is doing and talk about it.
 
-Project photos will be added here.
+---
 
-## 📚 Documentation
+# 🎯 Objective
 
-Project documentation will be added here.
+The objective is to demonstrate technically useful technologies through an intentionally useless and entertaining application.
 
-## 😂 Final Statement
+The project demonstrates:
 
-> "We took useful technology and used it to accomplish something completely unnecessary."
+- IoT
+- Embedded Systems
+- ESP32 Programming
+- Sensor Interfacing
+- Computer Vision
+- Python Programming
+- Human Detection
+- Data Processing
+- Human-Computer Interaction
+- Object-to-Object Communication
+
+---
+
+# 🤡 Why Is It Useless?
+
+A normal smart-home system might:
+
+- Save energy
+- Improve security
+- Automate appliances
+- Monitor useful information
+- Make decisions for the user
+
+Our system does none of that.
+
+Instead, it:
+
+- Watches the human
+- Counts events
+- Comments on behaviour
+- Lets objects gossip with each other
+- Produces unnecessary observations
+
+### The technology is useful.
+
+### The purpose is completely useless.
+
+---
+
+# 🧩 System Components
+
+## 💡 Light Object
+
+The light system uses an **LDR (Light Dependent Resistor)** to detect the surrounding light level.
+
+The ESP32 reads the LDR value and determines whether the environment is relatively bright or dark.
+
+An RGB LED represents the smart light.
+
+Example:
+
+> 💡 Light: "It's bright outside and I'm still being used."
+
+---
+
+## 🚪 Door Object
+
+The door system uses an **IR sensor** to detect the door/activity state.
+
+The ESP32 continuously reads the IR sensor and identifies changes in its state.
+
+Example:
+
+> 🚪 Door: "He opened me again."
+
+> 🚪 Door: "That's the 14th time today."
+
+---
+
+## 📷 Camera Object
+
+A webcam is connected to a computer running a Python program.
+
+The Python computer-vision system analyzes the camera feed and determines whether a human is present.
+
+The system produces two basic states:
+
+```text
+👤 HUMAN DETECTED
+
+or
+
+🚫 NO HUMAN DETECTED
