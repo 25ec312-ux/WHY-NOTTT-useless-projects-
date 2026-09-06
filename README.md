@@ -2,8 +2,7 @@
 
 
 
-# [Project Name] 🎯
-  USELESS HOME
+#  USELESS HOME 🎯
 
 ## Basic Detail
 
@@ -23,7 +22,6 @@ Objective: To combine computer vision with ESP32-based automation to create a si
 ### Team Members
 - Team Lead: [Aldrin joseph] - [Muthoot institute of science and technology ]
 - Member 2: [Sain P Savin] - [Muthoot institute of science and technology]
-- Member 3: [Name] - [College]
 
 ### Project Description
 This project is a smart home automation system that combines an ESP32 with Python-based computer vision using a phone camera. It detects human presence and uses sensor inputs to intelligently control connected devices, making the system simple, responsive, and automated.
