@@ -4,104 +4,175 @@
 
 #  USELESS HOME 🎯
 
-## Basic Detail
+## Basic Details
 
 Domain: IoT, Embedded Systems & Computer Vision
 
 Main Platform: ESP32-WROOM + Python
 
-Key Technologies: Python, OpenCV, phone camera, ESP32, sensors and actuators.
+Key Technologies: ESP32, Python, YOLO11, OpenCV, IoT Sensors, Computer Vision and Wi-Fi Communication.
 
-Core Function: The phone camera and Python-based computer vision detect whether a human is present. Based on the detected condition, the ESP32 controls the connected smart-home components automatically.
+Core Function: The phone camera and YOLO11 detect human presence, while the ESP32 collects temperature, light, motion and door activity. The Python-based House Brain combines these inputs to generate sarcastic observations, object conversations and a Human Behaviour Score.
 
-Objective: To combine computer vision with ESP32-based automation to create a simple and intelligent smart-home system.
+Objective: To create a humorous IoT system where household objects monitor human activity, communicate their observations, and sarcastically judge the user's behaviour instead of serving a conventional useful purpose.
+
 
 ### Team Name: [WHY NOT?]
 
 
 ### Team Members
-- Team Lead: [Aldrin joseph] - [Muthoot institute of science and technology ]
-- Member 2: [Sain P Savin] - [Muthoot institute of science and technology]
+- Team Lead: Aldrin joseph - Muthoot Institute of Technology and Science 
+- Member 2: Sain P Savin - Muthoot institute of Technology and Science 
 
 ### Project Description
-This project is a smart home automation system that combines an ESP32 with Python-based computer vision using a phone camera. It detects human presence and uses sensor inputs to intelligently control connected devices, making the system simple, responsive, and automated.
+
+HouseWithOpinions is a humorous IoT and computer vision project that turns a house into an overly opinionated observer. A phone camera and YOLO11 detect human presence, while an ESP32 collects information such as temperature, light conditions, motion and door activity. The Python-based House Brain combines these inputs and generates sarcastic observations, object conversations and judgments about the human.
+
+Instead of helping the user, the house watches, gossips and judges them.
 
 ### The Problem (that doesn't exist)
 
-In everyday situations, people often forget to switch lights or other devices on/off depending on whether someone is actually present in the room. This fun project explores a simple solution using human detection through a phone camera and Python, combined with ESP32-based automation, to make the system respond automatically to the presence of a person.
+Modern smart homes are designed to make life easier through automation, security and energy management.
+
+But one important problem has been completely ignored:
+
+**The house has no opinions about its owner.**
+
+It cannot complain about unnecessary light usage, question repeated door openings, or wonder why someone is sitting around while the fan is running.
+
+Clearly, this unacceptable lack of household criticism needed to be solved.
 
 ### The Solution (that nobody asked for)
 
-The system uses a phone camera and Python-based computer vision to detect whether a person is present. The detection result is sent to the ESP32, which processes it along with sensor inputs and automatically controls the connected devices based on the person's presence.
+HouseWithOpinions gives ordinary household objects completely unnecessary personalities.
+
+- 🌀 **Fan:** Comments on the measured temperature and questions its purpose.
+- 💡 **Light:** Complains about unnecessary usage.
+- 🚪 **Door:** Counts how many times it is opened and judges the activity.
+- 👤 **House:** Detects human presence and reacts sarcastically.
+- 🧠 **House Brain:** Combines sensor and camera data to generate observations and a Human Behaviour Score.
+
+The system does not try to save energy, improve security or make life easier.
+
+**It simply watches, discusses and judges.**
+
 
 ## Technical Details
 
-Microcontroller: ESP32-WROOM
+**Microcontroller:** ESP32-WROOM
 
-Programming Language: C/C++ for ESP32 and Python for computer vision
+**Programming Languages:** C/C++ for ESP32 and Python for computer vision and data processing
 
-Computer Vision: Python with OpenCV
+**Computer Vision:** YOLO11 with OpenCV
 
-Camera: Smartphone camera used as the visual input
+**Camera:** Smartphone camera used as the visual input through an IP camera stream
 
-Communication: Python sends the human-detection result to the ESP32
+**Communication:** Wi-Fi communication between the ESP32 and Python-based House Brain using HTTP requests
 
-Processing: Real-time human presence detection followed by automated device control
+**Processing:** Real-time human presence detection using YOLO11 combined with ESP32 sensor data
 
-Development Environment: Arduino IDE and Python environment
+**Sensor Monitoring:** Temperature, light intensity, human motion and door activity
 
-System Type: Embedded automation with computer-vision-based control
+**Light Control:** ESP32 automatically controls the RGB LED based on LDR light-level readings
+
+**Fan Monitoring:** DHT22 measures the surrounding temperature, which is used by the Fan personality for sarcastic commentary
+
+**Development Environment:** Arduino IDE and Python environment
+
+**System Type:** IoT-based embedded monitoring system with computer-vision-based human detection and humorous behavioural analysis
+
+
 ### Technologies/Components Used
-For Software:
-- [Languages used:c,c++,python]
-- [Frameworks used:Arduino Framework,Opencv]
-- [Libraries used:ESP32 Arduino core,Opencv,pyserial]
-- [Tools used:Arduino IDE,python IDE,Smartphone camera]
 
-For Hardware:
-- [List main components]
-ESP32-WROOM ,LDR sensor,IR sensor,PIR sensor,DHT sensor,RGB LED,Breadboard
-- [List specifications]
+#### For Software:
 
-ESP32-WROOM: 3.3 V logic, Wi-Fi and Bluetooth enabled
+- **Languages used:** C/C++, Python
+- **Frameworks used:** Arduino Framework
+- **Computer Vision:** YOLO11, OpenCV
+- **Python Libraries:** Ultralytics, OpenCV, Requests, NumPy, Pillow
+- **Communication:** HTTP over Wi-Fi
+- **Tools used:** Arduino IDE, Python, Smartphone IP Camera
 
-Smartphone Camera: Used for real-time video input
 
-LDR: Analog light-intensity sensing
+#### For Hardware:
 
-IR Sensor: Digital object/door detection
+- ESP32-WROOM
+- DHT22 Temperature Sensor
+- LDR Sensor
+- PIR Motion Sensor
+- IR Door Sensor
+- RGB LED
+- Fan
+- Breadboard
+- Jumper Wires
+- 220Ω Resistors
 
-PIR Sensor: Human motion detection
 
-DHT Sensor: Temperature and humidity measurement
+#### Hardware Specifications:
 
-RGB LED: Red, green and blue light output
+**ESP32-WROOM:** 3.3V logic, Wi-Fi and Bluetooth enabled
 
-Breadboard: Circuit prototyping
+**DHT22:** Digital temperature sensing; temperature data is used for fan-related observations
 
-Jumper Wires: Component connections
+**LDR:** Analog light-intensity sensing
 
-Resistors: Current limiting and circuit protection
-- [List tools required]
+**IR Sensor:** Digital door/opening detection
 
-Arduino IDE
+**PIR Sensor:** Human motion/presence detection
 
-Python
+**RGB LED:** Visual light output controlled by the ESP32 according to room brightness
 
-OpenCV
+**Fan:** Household object monitored through temperature readings; not electronically controlled
 
-VS Code
+**Breadboard:** Circuit prototyping and component connections
 
-USB cable
+**Jumper Wires:** Electrical connections between components
 
-Computer/Laptop
+**220Ω Resistors:** Current limiting for RGB LED connections
 
-Smartphone
 
-### Implementation
-For Software:
-# Installation
-[commands]
+#### Tools Required:
+
+- Arduino IDE
+- Python
+- Laptop/Computer
+- Smartphone with IP Camera application
+- USB Cable
+- Wi-Fi Network
+
+## Implementation
+
+### Software Implementation
+
+The system is implemented using two main programs:
+
+1. **ESP32 Firmware** – Collects sensor data, controls the RGB LED based on room brightness, counts door openings, and provides sensor data through a Wi-Fi HTTP server.
+2. **Python House Brain** – Receives ESP32 data, processes the smartphone camera stream using YOLO11, detects human presence, and generates the sarcastic House Group Chat and Human Behaviour Score.
+
+### Installation
+
+#### ESP32
+
+1. Install Arduino IDE.
+2. Install the ESP32 board package.
+3. Install the required libraries:
+   - WiFi
+   - WebServer
+   - DHT Sensor Library
+4. Connect the sensors and RGB LED according to the pin configuration.
+5. Enter your Wi-Fi credentials in the ESP32 program.
+6. Upload the ESP32 firmware.
+7. Note the IP address displayed in the Serial Monitor.
+
+#### Python
+
+Install the required Python libraries:
+
+```bash
+pip install ultralytics opencv-python requests numpy pillow
+
+##Arduino Code 
+
 #include <WiFi.h>
 #include <WebServer.h>
 #include "DHT.h"
@@ -312,7 +383,8 @@ void loop() {
   server.handleClient();
 
 }
-arduino code
+
+##Python Code 
 
 import requests
 import cv2
@@ -856,10 +928,15 @@ cv2.destroyAllWindows()
 print()
 print("HOUSE BRAIN STOPPED.")
 
-python code
-
 # Run
-[commands]
+
+Start the smartphone IP camera application first.
+
+Then run the Python House Brain:
+
+```bash
+python house_brain.py
+
 
 ### Project Documentation
 
@@ -884,9 +961,8 @@ Automatic Control of Connected Devices
 ↓
 Continuous Monitoring
 
-Very short description:
-The phone camera detects human presence using Python, and the result is sent to the ESP32 for automatic device control.
-
+Short description:
+The smartphone camera provides visual input for YOLO11-based human detection, while the ESP32 collects temperature, light, motion and door activity data. The Python House Brain combines these inputs to generate sarcastic observations, object conversations and a Human Behaviour Score.
 For Hardware:
 
 # Schematic & Circuit
