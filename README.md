@@ -273,8 +273,8 @@ Instead of automating the home to make life easier, the system simply **watches,
 https://drive.google.com/drive/folders/1oICfdNwpuUVN8U2ifv4jcr7-Zq_J_9uF
 
 ## Team Contributions
-- [Aldrin Joseph]: [python code,phone camera and motion sensors]
-- [Sain P Savin]: [arduino code,LR , PIR sensors]
+- Aldrin Joseph : python code,phone camera and sensors
+- Sain P Savin : arduino code,IR , PIR sensors
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
