@@ -17,7 +17,7 @@ Core Function: The phone camera and YOLO11 detect human presence, while the ESP3
 Objective: To create a humorous IoT system where household objects monitor human activity, communicate their observations, and sarcastically judge the user's behaviour instead of serving a conventional useful purpose.
 
 
-### Team Name: [WHY NOT?]
+### Team Name: WHY NOT?
 
 
 ### Team Members
@@ -151,6 +151,13 @@ The system is implemented using two main programs:
 
 ### Installation
 
+#### Python
+
+Install the required Python libraries:
+
+```bash
+pip install ultralytics opencv-python requests numpy pillow
+
 #### ESP32
 
 1. Install Arduino IDE.
@@ -164,14 +171,9 @@ The system is implemented using two main programs:
 6. Upload the ESP32 firmware.
 7. Note the IP address displayed in the Serial Monitor.
 
-#### Python
-
-Install the required Python libraries:
-```bash
-pip install ultralytics opencv-python requests numpy pillow
 
 
-##Arduino Code 
+Arduino Code 
 
 #include <WiFi.h>
 #include <WebServer.h>
@@ -942,8 +944,9 @@ python house_brain.py
 
 
 # Diagrams
-![Workflow]
-Project Workflow
+
+System Workflow
+
 
 📱 Smartphone Camera
         ↓
