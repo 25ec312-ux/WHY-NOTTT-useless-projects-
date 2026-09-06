@@ -151,13 +151,6 @@ The system is implemented using two main programs:
 
 ### Installation
 
-#### Python
-
-Install the required Python libraries:
-
-```bash
-pip install ultralytics opencv-python requests numpy pillow
-
 #### ESP32
 
 1. Install Arduino IDE.
@@ -171,9 +164,17 @@ pip install ultralytics opencv-python requests numpy pillow
 6. Upload the ESP32 firmware.
 7. Note the IP address displayed in the Serial Monitor.
 
+#### Python
+
+Install the required Python libraries:
+
+```text
+pip install ultralytics opencv-python requests numpy pillow
 
 
-Arduino Code 
+
+
+//Arduino Code 
 
 #include <WiFi.h>
 #include <WebServer.h>
@@ -385,6 +386,7 @@ void loop() {
   server.handleClient();
 
 }
+
 
 ##Python Code 
 
