@@ -169,7 +169,7 @@ The system is implemented using two main programs:
 Install the required Python libraries using python command pip install ultralytics opencv-python requests numpy pillow in the terminal.
 
 
-###Run
+### Run
 
 Start the smartphone IP camera application first.
 
@@ -177,7 +177,7 @@ Then run the Python House Brain:
 python house_brain.py
 
 
-##Project Documentation
+## Project Documentation
 
 
 ### Diagrams
