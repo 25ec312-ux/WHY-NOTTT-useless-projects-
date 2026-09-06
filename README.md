@@ -167,9 +167,9 @@ The system is implemented using two main programs:
 #### Python
 
 Install the required Python libraries:
-
 ```bash
 pip install ultralytics opencv-python requests numpy pillow
+
 
 ##Arduino Code 
 
