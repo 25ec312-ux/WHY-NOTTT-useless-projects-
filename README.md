@@ -166,10 +166,7 @@ The system is implemented using two main programs:
 
 #### Python
 
-Install the required Python libraries:
-
-```text
-pip install ultralytics opencv-python requests numpy pillow
+Install the required Python libraries using python command pip install ultralytics opencv-python requests numpy pillow in the terminal.
 
 
 
@@ -195,7 +192,7 @@ WebServer server(80);
 
 #define IR_PIN 23
 #define LDR_PIN 34
-#define PIR_PIN 27
+#define PIR_PIN 17
 
 #define RED_PIN 25
 #define GREEN_PIN 32
@@ -388,7 +385,7 @@ void loop() {
 }
 
 
-##Python Code 
+##Python Code
 
 import requests
 import cv2
